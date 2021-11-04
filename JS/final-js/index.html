@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Document</title>
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <script src="person.js"></script>
+    <script src="site.js"></script>
+    <form event="onsubmit">
+      <input type="text" pattern=[a-zA-Z] required=true placeholder="first name" />
+      <input type="text" required=true placeholder="last name" />
+      <input type="number" required=true placeholder="id" />
+      <input type="date" required=true placeholder="date of birth" />
+      <input type="text" required=true placeholder="city name" />
+      <input type="number" placeholder="parent id" />
+      <button type="submit">add person</button>
+    </form>
+  </body>
+</html>
