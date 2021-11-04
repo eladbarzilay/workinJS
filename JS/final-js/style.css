@@ -1,10 +1,15 @@
 input{
     color: rgb(22, 25, 32);
     border-radius: 5px;
+
 }
 button{
-    background-color: burlywood;
+    background-color: #49df0946;
 }
 form{
     text-align: center;
+}
+div{
+text-align: center;
+background-color: burlywood
 }

@@ -4,6 +4,9 @@ let z = prompt("type a number");
 let num = 10;
 let max = 0;
 
+max = x>max ? max = x : max=max;
+max = y>max ? max = y : max=max;
+max = z>max ? max = z : max=max;
 if(x > num){
     console.log("num is bigger")
 }else if(x < num){
