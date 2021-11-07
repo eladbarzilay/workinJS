@@ -22,8 +22,14 @@ if(grades < 0 || grades > 100 || isNaN(grades)){
 }
 console.log(totalgrades);
  avg = totalgrades/students;
-
+if(students>0){
  console.log(` there are ${students} students in the class
  grades avg is ${avg}
  heighst grase is ${max}
  lowest grade is ${min}`);
+}else{
+    console.log(` there are 0 students in the class
+    grades avg is -
+    heighst grase is -
+    lowest grade is -`);
+}
