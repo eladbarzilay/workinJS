@@ -1,0 +1,41 @@
+
+#burger{
+    height: 15px;
+    width: 100px;
+    background-color: brown;
+    border-radius: 5px; 
+    display: inline-flex;
+}
+.bun{
+    height: 20px;
+    width: 100px;
+    background-color: rgb(223, 155, 100);
+    border-radius:  5px; 
+    display: inline-flex;
+}
+#cheese{
+    height: 8px;
+    width: 100px;
+    background-color: rgb(233, 208, 95);
+    border-radius: 5px; 
+    display: inline-block;
+}
+#hasa{
+    height: 5px;
+    width: 100px;
+    background-color: green;
+    border-radius: 5px; 
+    display: inline-block;
+
+}
+div{
+    text-align: center;
+}
+span{
+    display:inlines;
+}
+h3{
+
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}

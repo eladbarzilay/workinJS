@@ -1,0 +1,31 @@
+table,td,tr,th{
+    border:1px solid rgb(160, 218, 69);
+    border-radius: 5px;
+    
+}
+th{
+    background-color:rgba(89, 58, 139, 0.349);
+    color: rgb(0, 129, 86);
+    padding-right: 25px;
+}
+td{
+    background-color:rgba(33, 33, 75, 0.445);
+    padding-right: 25px;
+    
+}
+#one{
+    background-color:rgba(35, 51, 36, 0.349);
+}
+#two{
+    background-color:rgba(255, 243, 202, 0.521);
+}
+table{
+
+    height: 15px;
+    width: 500px;
+}
+div{
+    display: flex;
+    text-align: center;
+
+}

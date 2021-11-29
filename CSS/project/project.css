@@ -1,0 +1,141 @@
+body{
+    background-color: rgb(245, 237, 228);
+}
+div{
+    display: flex;
+    margin: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+h5{
+    margin: 0;
+}
+h2{
+    text-align: center;
+}
+.head {
+    width: 800px;
+    margin-top: 30px;
+    text-align: center;
+}
+header {
+    width: 800px;
+    display: flex;
+    margin: auto;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.circles {
+    width: 350px ;
+    margin: 10px;
+    
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+  #image1 {
+      width: 820px ;
+      height: 200px ;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: auto;
+  }
+  #image2 {
+    position: absolute;
+    margin: auto;
+    border: 3px solid white;
+    border-radius:50%;
+    top: 150px;
+    left: 45%;
+    z-index: 1;
+    width: 100px ;
+    height: 100px ;
+
+  }
+  .round{
+      border-radius: 50%;
+      border:3px solid rgba(80, 180, 238, 0.74);
+      padding: 10px;
+      margin: 8px;
+  }
+  .description{
+      font-size:small;
+      margin: 7px;
+  }
+
+  input{
+      margin: 2px;
+      border-radius: 5px;
+  }
+  .smallinp{
+text-align: left;
+  }
+  .biginp{
+      text-align: top;
+      height: 150px;
+      width: 350px;
+
+  }
+  .biginp::placeholder{
+   position:fixed;
+  text-align: left;
+  vertical-align:auto;
+  }
+
+  .services{
+      display: flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+    /* width: 100px; */
+    background-color:  rgb(255, 255, 255);
+      
+  }
+
+  .service{
+      border: 2px solid rgba(80, 180, 238, 0.74);
+      margin: 10px;
+      padding: 10px;
+      /* border-radius: 20px; */
+  }
+  .service:nth-child(odd){
+      
+  }
+  .service:nth-child(even){
+    border-radius: 20px;
+}
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+    
+    
+    
+}
+.about{
+    justify-content: right;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.left{
+    
+    margin: 10px;
+}
+.contact{
+    margin: 10px;
+    background-color:  rgb(255, 255, 255);
+}
+.color{
+    background-color:  rgb(255, 255, 255);
+}

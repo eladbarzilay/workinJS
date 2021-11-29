@@ -1,0 +1,20 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: 0.5s;
+}
+@media screen and (max-width:600px) {
+  .box {
+    background-color: palegreen;
+    border-radius: 25%;
+  }
+}
+
+@media screen and (max-width:400px) {
+    .box {
+        background-color: rgb(85, 6, 6);
+     
+        border-radius: 50%;
+      }
+}

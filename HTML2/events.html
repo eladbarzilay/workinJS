@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+<title>Document</title>
+<link rel="icon" href="" />
+<link rel="stylesheet" href="style.css">
+<script src="events.js"></script>
+
+</head>
+
+<body>
+    <button onclick="add()"> + </button>
+    <span id="spn">0</span>
+    <button onclick="minus()"> - </button><br>
+
+    <p>----------------------------------s----------------</p>
+
+
+    <input type="range"  id="rng1" min="0" max="100"><br>
+    <span id="guess"></span><br>
+    <input type="text" id="inp" placeholder="guess"><br>
+    <button onclick="show()">check</button>
+    
+
+    <p>--------------------------------------------------</p>
+
+    <input type="range" oninput="show2()" id="rng2" min="0" max="100"><br>
+    <span id="output"></span>
+
+    <p>----------------------------------------------------</p>
+</body>
+
+</html>

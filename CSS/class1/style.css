@@ -1,0 +1,71 @@
+
+
+h1{
+    position:sticky;
+    top: 0;
+    font-size: 40px;
+    color: blue;
+}
+body {
+    direction:rtl;
+    font-family: 'Rubik', sans-serif;
+    color:red;
+    background-color: rgba(236, 198, 184, 0.651);
+}
+.bold{
+    font-weight: bold;
+}
+.bold:hover{
+    font-weight:normal;
+}
+#one{
+    color: black
+}
+
+#one ,.bold{
+    text-decoration: underline;
+}
+p.bold{
+    font-style: italic;
+}
+div{
+    /* background-image: linear-gradient(red, blue); */
+    background-color: blanchedalmond;
+}
+div span{
+    color: blueviolet;
+}
+div:hover span{
+    color: rgb(38, 6, 68);
+}
+*{
+    background-color: rgb(182, 120, 120)
+}
+div:hover{
+    background-color: aquamarine;
+}
+button:hover{
+    box-shadow: 5px 5px 5px black;
+}
+button:active{
+    box-shadow:inset 5px 5px 5px black;
+}
+input{
+    outline:none;
+    display: block;
+}
+input:focus{
+    border: 9px solid rgb(120, 130, 214);
+}
+li:nth-child(odd){
+    color: purple;
+}
+li:nth-child(even){
+    color: rgb(0, 128, 11);
+}
+li:first-child{
+    color: blue;
+}
+li:last-child{
+    color: blanchedalmond;
+}

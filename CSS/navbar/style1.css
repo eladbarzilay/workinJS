@@ -1,0 +1,104 @@
+body{
+  direction: rtl;
+  /* margin: 0; */
+}
+header{
+    height: 5%;
+    width: 100%;
+    position:fixed;
+    top:0;
+    /* padding: 20px; */
+    /* background-color:  aqua; */
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.753),orange,yellow,green,rgba(0, 0, 255, 0.562),rgba(168, 78, 233, 0.479),rgba(238, 130, 238, 0.493));
+}
+h1{
+    position:fixed;
+    background-color: aqua;
+}
+div{
+    height: 5%;
+    width: 100%;
+    position:fixed;
+    display:block;
+    background-color: rgb(20, 31, 31);
+}
+#home{
+    left: 10;
+    position: absolute;
+}
+#search{
+   left: 8px;
+    position: absolute;
+    border-radius: 10px;
+}
+#search input{
+    border-radius: 7px;
+    padding-right: 20px;
+}
+#search i{
+    top: 2px;
+    right: 4px;
+    position: absolute;
+}
+#categories{
+    position: absolute;
+    right:70px;
+    cursor:pointer;
+
+}
+#categories:hover #inspan{
+    display: block;
+}
+#inspan{
+    background-color: rgb(200, 159, 238);
+    display: none;
+    height: auto;
+    width: auto;
+    border-radius: 10px;s
+}
+li{
+    position:relative;
+    list-style-type: none;
+    right: -30px;;
+}
+a{
+   text-decoration: none;
+   color:blue
+}
+
+
+
+
+
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+  
+
+  img{
+      align-items: center;
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+img:hover{
+    animation-name: spin;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+
+}
+

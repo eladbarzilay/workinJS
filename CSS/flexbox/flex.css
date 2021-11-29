@@ -1,0 +1,51 @@
+/* .flexbox{
+    background-color:darkblue;
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.flexbox div{
+    background-color: rgb(194, 210, 224);
+    font-size: 30px;
+    margin: 10px;
+    padding: 20px;
+} */
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+.box{
+    padding: 20px;
+    margin: 10px;
+
+}
+#left {
+    width:70%;
+    flex-shrink: 0;
+}
+
+#yellow {
+    background-color: yellow;
+  }
+  #green {
+    background-color: green;
+  }
+  #orange {
+    background-color: orange;
+  }
+  #red {
+    background-color: red;
+    width:100%;
+  }
+#blue {
+  background-color: blue;
+  width:100%;
+
+}
