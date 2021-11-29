@@ -21,16 +21,16 @@ function setToDB(items) {
 function getFromDB() {
   return JSON.parse(localStorage.DB);
 }
-setToDB(itemsInit);
- let items = getFromDB();
-
-
 function fillItems() {
   let ul = document.querySelector(`#allListul`);
   itemsInit.forEach((item) => {
     ul.innerHTML += `<li id=${item.id} data-p =${item.id}>${item.name} | ${item.price} $</li>`;
   });
 }
+
+
+setToDB(itemsInit);
+ let items = getFromDB();
 fillItems();
 
 // document.querySelector(`#allListul`).addEventListener( "click",(e) => {
@@ -48,38 +48,67 @@ fillItems();
 
 
   document.querySelector(`#myListul`).addEventListener( "dblclick",(e) => {
-    let id = e.target.dataset.p;
+    let id = e.target.id;
     let x = myList.find(v => v.id == id);
     removeFromMyList(x);
 
   }
   );
-  
+
+
   function addToMyList(item){
     let myul = document.querySelector("#myListul");
-    myul.innerHTML += `<li class="myList" id=${item.id} data-p =${item.id}>${item.name}</li>`;
+    myul.innerHTML += `<li class="myListClass" id=${item.id} >${item.name}</li>`;
     myList.push(item);
     localStorage.myList = JSON.stringify(myList);
   }
 
   function removeFromMyList(item){
-    // debugger;
-   let remove = document.getElementById(item.id);
-   let class2 = document.getElementsByClassName("myList");
-
-   console.log(item.className);
-   if(item.className == item.myList){
-     remove.remove();
-    }else{
-    alert("non")
-   }
-
+    let x = document.getElementsByClassName("myListClass");
+    for (let i = 0; i < x.length; i++) {
+      if(x[i].innerText == item.name){
+        x[i].remove();
+        break;
+      }
+    }
+    subSum(item);
+  
   }
+
+    function subSum(item){
+      let sum = document.querySelector("#myListSpan");
+      let x = Number(sum.innerText);
+      let res = x-item.price;
+      sum.innerText = res;
+    }
+
   function sum(item){
     let sum = document.querySelector("#myListSpan");
     let x = Number(sum.innerText);
     let res = x+item.price;
     sum.innerText = res;
+  }
+
+
+
+
+
+
+  clearList();
+  function clearList(){
+    document.querySelector(`#clear`).addEventListener( "click",() => {    
+      document.querySelector("#myListSpan").innerHTML = 0;
+      let x = document.getElementsByClassName("myListClass");
+      console.log(x);
+      // for (let i = x.length-1; i >= 0; i--) {
+      //   x[i].remove();
+      // }
+     
+      while (x.length != 0) {
+        x[0].remove();
+      }
+
+    });
   }
 
 
