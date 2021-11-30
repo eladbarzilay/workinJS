@@ -1,0 +1,17 @@
+span{
+    display: inline-block;
+    justify-content:center;
+    height: 50px;
+    width: 50px;
+    
+    text-align: center;
+    border: 1px solid black;
+    background-size: 50px 50px;
+    
+}
+div{
+    /* display:flex; */
+    text-align: center;
+    margin: auto;
+    /* background-image: url(./images/o.jpg); */
+}
