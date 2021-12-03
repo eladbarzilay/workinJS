@@ -5,14 +5,31 @@
     <title>Document</title>
     <link rel="icon" href="" />
     <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-    <div id="board">
-        
+  </head>
+  
+  <body>
+    <div id="start">
+      <h1> wellcome to the tic-tac-toe game</h1>
+      <h3> <a  target="#" href="https://en.wikipedia.org/wiki/Tic-tac-toe">rules</a></h3>
+      <!-- <h3>what size do you want the board? <br/>
+        <input id="size" type="number" value="3"  min="3" max="10">
+      </h3> -->
     </div>
-        <button id="clearBoard">clear board</button>
-        <button id="undo">undo move</button>
+    <div id="board">
+      
+    </div>
+    <div id="options">
+      <br>
+      <button id="changeSize">new game</button>
+      <br><br>
+      <button id="record">show record</button>
+      <br> <br>
+      <button id="clearBoard">clear board</button>
+      <button id="undo">undo move</button>
+      <br><br>
+      <button id="save">save game</button>
+      <button id="load">load game</button>
+    </div>
     <script src="ticTacToe.js"></script>
   </body>
 </html>
