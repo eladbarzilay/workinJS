@@ -1,0 +1,68 @@
+
+body{
+    background-color: rgba(207, 198, 198, 0.685);
+}
+span{
+    /* position: relative;
+    flex-grow: 2;
+    flex-flow: wrap;
+    width: 30%;
+    height: 50px; */
+    display: inline-block;
+    width: 50px;
+    height:50px;
+    /* background-image: url(./images/white.jpg); */
+    justify-content:center;
+    text-align: center;
+    border: 1px solid black;
+    background-size: cover;
+
+}
+#players{
+    display: inline;
+
+}
+
+div{
+    text-align: center;
+    margin: auto;
+}
+/* #board{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: none;
+    width:auto;
+} */
+
+button{
+    border-radius: 25px;
+    padding:10px;
+    background-color: blanchedalmond;
+    color: blue;
+    box-shadow: 2px 2px;
+    
+}
+
+h1{
+    background-position: center;
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.603),rgba(255, 166, 0, 0.705),rgba(255, 255, 0, 0.789),rgba(0, 128, 0, 0.324),rgba(0, 0, 255, 0.462),rgba(168, 78, 233, 0.479),rgba(238, 130, 238, 0.493));
+}
+
+
+/* @keyframes example {
+    100%   {background-color:red;};
+    75%  {background-color:yellow; };
+    50%  {background-color:blue; };
+    75%  {background-color:green; };
+    100% {background-color:red;};
+  } */
+#record{
+    width: 180px;
+
+}
+#changeSize{
+    width: 180px;
+}
