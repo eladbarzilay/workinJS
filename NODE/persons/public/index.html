@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Document</title>
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+
+</head>
+
+  <body>   
+         <h1>Persons</h1>
+
+            <input type="text" onChange=search() placeholder="search" id="search" name="search">
+
+    <div class="flexbox">
+        
+        
+        <form>
+            <h2>Add Person</h2>
+            <input class="input-item" name="firstName" type="text" placeholder="First Name">
+            <input class="input-item" name="lastName" type="text" placeholder="Last Name">
+
+            <label class="input-item" id='color'>
+                eyes color
+                <input name="eyeColor" type="color">
+            </label>
+
+            <input class="input-item" name="age" type="number" placeholder="Age">
+
+            <select name='city'>
+                <option>Jerusalem</option>
+                <option>Tel Aviv</option>
+                <option>Haifa</option>
+                <option>Be'er Sheva</option>
+            </select>
+            <br />
+
+            <input type="submit" value="Add">
+        </form>
+
+
+        <ul>
+            <h2>List</h2>
+
+            <div id='list'></div>
+        </ul>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

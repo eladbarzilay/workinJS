@@ -24,10 +24,10 @@ function creatBoard(size) {
     }
     x.innerHTML += `<br>`;
   }
-  // p1 = createPlayer();
-  // p2 = createPlayer();
-  // document.getElementById("player1").innerHTML+=p1.name;
-  // document.getElementById("player2").innerText+=p2.name;
+  p1 = createPlayer();
+  p2 = createPlayer();
+  document.getElementById("player1").innerHTML+=p1.name;
+  document.getElementById("player2").innerText+=p2.name;
 }
 
 document.getElementById("changeSize").addEventListener("click", function () {
@@ -71,20 +71,20 @@ document.querySelector("#undo").addEventListener("click", () => {
 });
 
 function writeToBoard(e) {
-  // let p1 = document.getElementById("player1");
-  // let p2 = document.getElementById("player2");
+  let p1 = document.getElementById("player1");
+  let p2 = document.getElementById("player2");
   let fullId = e.target.id;
   let id = Number(fullId.slice(3));
   if (fullId != "board") {
     id = id;
 
-  // if(moveCount%2 == 0) {
-  //   p1.style.color = "black";
-  //   p2.style.color ="blue"
-  // }else{
-  //   p1.style.color = "blue";
-  //   p2.style.color ="black";
-  // }
+  if(moveCount%2 == 0) {
+    p1.style.color = "black";
+    p2.style.color ="blue"
+  }else{
+    p1.style.color = "blue";
+    p2.style.color ="black";
+  }
   let x = document.getElementById(fullId);
   let takenCheck = gameSet.find((v) => v == fullId);
   if (takenCheck == undefined && takenCheck != fullId ) {
@@ -298,10 +298,7 @@ function checkWin() {
     );
 
     if (flag1 || flag0 || flag3 || flag2 || flag4 || flag5 || flag6 || flag7) {
-      console.log("bingo");
       return true;
-    } else {
-      console.log("no");
     }
   }
 }
