@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+<title>Document</title>
+<link rel="icon" href="" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id=buttons>
+        <input type="text" id="getFolderName">
+    <button id="getFolder" onclick="getFolder()">get folder</button>
+    <input type="checkbox" checked="true">
+    <br>
+    <input type="text" id="createFolderName">
+    <button id="createFolder" onclick="createFolder()">create folder</button>
+    <input type="checkbox" checked="true">
+    <br>
+    <input type="text" id="createFileName">
+    <button id="createFile" onclick="createFile()">create file</button>
+    <input type="checkbox" checked="true">
+    <br>
+    <input type="text" id="oldFileName">
+    <input type="text" id="newFileName">
+    <button id="changeFileName" onclick="changeFileName()">change file name</button>
+    <input type="checkbox" checked="true">
+        <br>
+        <input type="text" id="deleteFile">
+    <button id="deleteFile" onclick="deleteFile()">delete file</button>
+    <input type="checkbox" checked="true">
+    <br>
+    <input type="text" id="updateFileName">
+    <input type="text" id="updateFileContent">
+    <button id="updateFileContent" onclick="updateFileContent()">update file content</button>
+    <input type="checkbox" checked="true">
+    <br>
+    <input type="text" id="getFileName">
+    <button id="getFile" onclick="getFile()">get file</button>
+    <br>
+</div>
+<div id="show">
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
