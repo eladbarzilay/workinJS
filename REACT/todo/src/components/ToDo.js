@@ -17,11 +17,12 @@ function ToDo(){
         })
     }
 
+
     return <div className="todo">
         <TaskForm/>
-        <List list={tasks.filter(t=>!t.isDone)}/>
+        <List list={tasks.filter(t=>!t.isDone)} refreshView={getTasks}/>
         <hr />
-        <List list={tasks.filter(t=>t.isDone)}/>
+        <List list={tasks.filter(t=>t.isDone)} refreshView={getTasks}/>
     </div>
 }
 export default ToDo
