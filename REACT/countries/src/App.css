@@ -8,21 +8,24 @@ img{
 }
 .CountriesItem{
   display: flex;
-  direction: row;
+  direction: column;
+  margin: 10px;
   justify-content:center ;
-
+  padding: 10px;
+  text-align: center;
 }
 h3{
   text-align: center;
 }
 .CountriesItem span{
   display: relative;
-  /* background-color: aqua; */
+padding: 10px;
 }
 
-.countries{
- 
-}
 .app{
+display:flex;
+justify-content: center;
+}
+.search{
 align-items: center;
 }
