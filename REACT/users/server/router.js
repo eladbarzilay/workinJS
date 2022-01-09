@@ -6,6 +6,20 @@ module.exports = (app) => {
         res.send(await userLogic.read());
     })
 
+    
+    app.post('/user',async (req, res) => {
+        let result;
+        try {
+            result = await userLogic.create(req.body)
+        }catch (err) {
+            result={
+                status: 400,
+                message: err.message || err
+            }
+        }
+        res.send(result)
+    })
+    
     app.get('/user/login',async (req, res) => {
         let result
         try {
@@ -18,19 +32,6 @@ module.exports = (app) => {
         }
     }
         res.send(result);
-    })
-
-    app.post('/user',async (req, res) => {
-      let result;
-      try {
-          result = await userLogic.create(req.body)
-      }catch (err) {
-          result={
-              status: 400,
-              message: err.message || err
-          }
-      }
-      res.send(result)
     })
 
     app.post('/user/register', async (req, res) => {
