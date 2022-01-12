@@ -4,6 +4,8 @@ const schema = new mongoose.Schema({
     language:{
         type: String,
         required: true,
+        unique: true,
+        caseSensitive: true,
         minLength: 2,
         trim: true,
     },

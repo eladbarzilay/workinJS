@@ -5,8 +5,8 @@ async function createMyExercise(data){
     return await exerciseModel.create(data)
 }
 
-async function getAllExercises(){
-    return  await exerciseModel.find();
+async function getAllExercises(filter={},projection){
+    return  await exerciseModel.find(filter,projection);
 }
 
 async function updateExercise(_id,newData){

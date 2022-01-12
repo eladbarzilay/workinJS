@@ -5,8 +5,8 @@ async function createMyLanguage(data){
     return await languagesModel.create(data)
 }
 
-async function getAllLanguages(){
-    return await languagesModel.find();
+async function getAllLanguages(filter={},projection){
+    return await languagesModel.find(filter,projection);
 }
 
 async function updateLanguage(_id,newData){

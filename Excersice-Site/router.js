@@ -21,7 +21,7 @@ module.exports = (app) => {
     app.get('/languages',async (req, res) => {
         let result
         try {
-            result = await languageLogic.read()
+            result = await languageLogic.read(req.body._id)
         } catch (error) {
             result = { 
                 status : 400,
@@ -31,16 +31,30 @@ module.exports = (app) => {
         res.send(result);
     })
 
-    app.get('/exercises',async (req, res) => {
+    app.get('/languages/exercises/:_id',async (req, res) => {
         let result
         try {
-            result = await exerciseLogic.read()
+            result = await exerciseLogic.readExercises(req.params._id)
         } catch (error) {
             result = { 
                 status : 400,
                 error : error.message || error 
             }
         }
+        res.send(result);
+    })
+
+    app.get('/exercises/:_id?',async (req, res) => {
+        let result
+        try {
+            result = await exerciseLogic.read(req.params._id)
+        } catch (error) {
+            result = { 
+                status : 400,
+                error : error.message || error 
+            }
+        }
+        
 
         res.send(result);
     })

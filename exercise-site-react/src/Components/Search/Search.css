@@ -1,0 +1,27 @@
+.Search {
+    text-direction: ltr;
+}
+
+.searchByTopic{
+    display: inline-block;
+    background-color: rgb(221, 145, 221);
+    padding: 5px;
+    margin: 3px;
+    border-radius: 15px;
+}
+
+.difficulty{
+    display: inline-block;
+    background-color: rgb(221, 145, 221);
+    padding: 5px;
+    margin: 3px;
+    border-radius: 15px;
+}
+
+.exerType{
+    display: inline-block;
+    background-color: rgb(221, 145, 221);
+    padding: 5px;
+    margin: 3px;
+    border-radius: 15px;
+}

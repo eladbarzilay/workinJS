@@ -1,0 +1,23 @@
+.Header {
+/* display: flex;
+flex-direction: row;
+justify-content: space-between; */
+position: sticky;
+top: 0;
+}
+
+.headerPage{
+    display: relative;
+    justify-content: space-between;
+text-decoration: none;
+border: 1px solid black;
+border-radius: 25px;
+padding: 10px;
+background-color: rgba(235, 187, 187, 0.295);
+}
+.Header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
